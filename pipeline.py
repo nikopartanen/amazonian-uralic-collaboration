@@ -16,9 +16,14 @@ import os
 import re
 import pympi
 
-TOKEN = "" # This needs to be added from HuggingFace 
-audio_file = "" # Here goes the path to the audio file
-language_code = "por" # Any larger language works here
+# See the documentation here for getting the token
+# https://huggingface.co/pyannote/speaker-diarization-3.0
+# pyannote needs that, but it is possible to also
+# download the model locally and use it from there
+TOKEN = "" 
+
+audio_file = "example.wav" # Here goes the path to the audio file
+language_code = "fin" # Any larger language works here
 
 # Here we load the pipeline for speaker diarization
 
